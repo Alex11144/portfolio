@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Sharifov | Mobile Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particle canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">HS</span>
+            <span class="logo-dot"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary">Hire Me</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Available for work</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">
+                    <span class="word">Hi, I'm</span>
+                </span>
+                <span class="title-line">
+                    <span class="word gradient-text">Hasan Sharifov</span>
+                </span>
+            </h1>
+            <div class="hero-role">
+                <span class="role-prefix">I'm a</span>
+                <span class="role-text" id="typed-text"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <p class="hero-description">
+                Flutter Developer with 3+ years of experience building beautiful,
+                high-performance mobile and web applications. I focus on clean architecture,
+                smooth UI/UX, and delivering exceptional user experiences.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary btn-large">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline btn-large">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Companies Worked</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="window-header">
+                    <div class="window-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">main.dart</span>
+                </div>
+                <div class="window-content">
+                    <pre><code><span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+  <span class="code-keyword">final</span> String name = <span class="code-string">'Hasan Sharifov'</span>;
+  <span class="code-keyword">final</span> String role = <span class="code-string">'Mobile Developer'</span>;
+
+  List&lt;String&gt; skills = [
+    <span class="code-string">'Flutter'</span>,
+    <span class="code-string">'Dart'</span>,
+    <span class="code-string">'Firebase'</span>,
+    <span class="code-string">'REST APIs'</span>,
+  ];
+
+  <span class="code-keyword">void</span> <span class="code-function">buildAwesomeApps</span>() {
+    <span class="code-comment">// Magic happens here ✨</span>
+  }
+}</code></pre>
+                </div>
+            </div>
+            <div class="floating-icons">
+                <div class="float-icon flutter"><i class="fab fa-flutter"></i></div>
+                <div class="float-icon firebase"><i class="fas fa-fire"></i></div>
+                <div class="float-icon dart"><i class="fas fa-code"></i></div>
+                <div class="float-icon mobile"><i class="fas fa-mobile-alt"></i></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Passionate About Creating <span class="gradient-text">Digital Experiences</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a Flutter Developer with a passion for creating beautiful, functional mobile applications.
+                        With a Bachelor's degree in Computer Science from ASOUI University, I've spent the last 3+ years
+                        honing my craft in mobile development.
+                    </p>
+                    <p>
+                        My expertise lies in building cross-platform applications using Flutter, implementing clean architecture,
+                        and integrating various APIs and services. I'm proficient in state management solutions like BLoC,
+                        Cubit, and Provider, and I love working with Firebase for backend services.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>gasans1929@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+994-55-382-60-64</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>ASOUI University - CS</span>
+                        </div>
+                    </div>
+                    <div class="languages">
+                        <h4>Languages</h4>
+                        <div class="language-tags">
+                            <span class="lang-tag">English (Advanced)</span>
+                            <span class="lang-tag">Russian (Fluent)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Flutter">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Flutter/Dart</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Firebase">
+                            <div class="skill-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <span class="skill-name">Firebase</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="API">
+                            <div class="skill-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="State">
+                            <div class="skill-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <span class="skill-name">BLoC/Cubit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Git">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="Node">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-skills">
+                        <h4>Other Technologies</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Freezed</span>
+                            <span class="tech-tag">auto_route</span>
+                            <span class="tech-tag">get_it</span>
+                            <span class="tech-tag">dio</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Experience</span>
+                <h2 class="section-title">My Professional <span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">AstraLab</h3>
+                                <span class="job-title">Flutter Developer</span>
+                            </div>
+                            <span class="timeline-date">Apr 2025 - Jul 2025</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <span class="project-tag">Profi.ru</span>
+                            <span class="project-tag">Profi.ru master</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Code Zone</h3>
+                                <span class="job-title">Flutter Developer</span>
+                            </div>
+                            <span class="timeline-date">Aug 2024 - Jan 2025</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <span class="project-tag">Aba Express</span>
+                            <span class="project-tag">Jetex (maintenance)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Abasoft Technologies</h3>
+                                <span class="job-title">Flutter Developer</span>
+                            </div>
+                            <span class="timeline-date">May 2022 - Aug 2024</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <span class="project-tag">Evet.az</span>
+                            <span class="project-tag">Danışan Kartlar</span>
+                            <span class="project-tag">Rieltor Ofisi</span>
+                            <span class="project-tag">Tiflo TV</span>
+                            <span class="project-tag">Danışan Kitab</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item freelance" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <h3 class="company-name">Freelance</h3>
+                                <span class="job-title">Fullstack Mobile Developer</span>
+                            </div>
+                            <span class="timeline-date">Jul 2023 - Present</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <span class="project-tag">Ormado Rewards</span>
+                            <span class="project-tag">Ormado Workplan</span>
+                            <span class="project-tag">Ormado Cashbook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="startup">Startups</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Evet.az</h3>
+                        <p class="project-description">Event booking and management platform</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Aba Express</h3>
+                        <p class="project-description">Delivery and logistics application</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Google Maps</span>
+                            <span>Real-time</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ormado Rewards</h3>
+                        <p class="project-description">Customer loyalty and rewards system</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>BLoC</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="startup">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CoffeeStep</h3>
+                        <p class="project-description">Coffee shop ordering application</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Payment Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CoffeeStep Admin</h3>
+                        <p class="project-description">Admin panel for managing CoffeeStep operations</p>
+                        <div class="project-tech">
+                            <span>Flutter Web</span>
+                            <span>Dashboard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="startup">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">BronKing</h3>
+                        <p class="project-description">Booking and reservation platform</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Push Notifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:gasans1929@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">gasans1929@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+994553826064" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+994-55-382-60-64</span>
+                            </div>
+                        </a>
+                        <a href="tel:+994518924746" class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Mobile</span>
+                                <span class="method-value">+994-51-892-47-46</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">HS</span>
+                    <span class="logo-dot"></span>
+                </div>
+                <p class="footer-text">Crafting digital experiences with Flutter</p>
+                <p class="copyright">&copy; 2025 Hasan Sharifov. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
